@@ -1,7 +1,7 @@
 time step;1;       
 space step;
 sigma;46.8;
-sigma2;46.8;
+sigma2;39;
 sigma extracell mx;30;
 decay extracell mx;0.003;
 plate x;620;

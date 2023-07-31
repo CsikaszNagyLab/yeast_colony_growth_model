@@ -163,12 +163,13 @@ for t=1:dt:nt
     %{
     %wet-dry change:
     if t==169 %change time
+        Dp_ratio=Dp2/Dp;
         Dp=30
-        Dp2=Dp
+        Dp2=Dp*Dp_ratio
         div_nbor(1)=0.63
     end
     %}
-   
+    
     %life cycle of the cells:
     new_cell=zeros(popnum(t,1),1);
     survive_cell=zeros(popnum(t,1),1);
