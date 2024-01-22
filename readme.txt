@@ -10,6 +10,16 @@ I. running the code (basic use):
 2. set variable "inputname" to the configuration .csv file
 3. set variable "outputname" to the name of the folder you would like to save the results (prefix identifying the experiment can be also added)
 4. run the script: the function yeast_model.m is called with the parameters of the configuration file
+	Examples for calling the model (from the run_yeast_model.m):
+	- with one starin:
+	inputname='1species_parameters.csv'; 
+	outputname='output/experiment1';
+	[p, p3, popnum, final_population, dead_cells, area_matrix]=yeast_model(inputname, outputname);
+	- with two strains:
+	inputname='2species_parameters.csv'; 
+	outputname='output/experiment2'; 
+	[p, p3, popnum, final_population, dead_cells, area_matrix]=yeast_model(inputname, outputname);
+	Examples for the parameter values and their definitions can be found in the Supplementary Table 2 and 3 of the corresponding article and in the parameter_files folder. 
 5. click after the initial cell and nutrient layout appears in order to start the simulation (if visualization of the simulation process is enabled)
 
 II. inhomogeneous initial nutrient distribution:
